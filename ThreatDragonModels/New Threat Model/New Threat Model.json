@@ -35,8 +35,8 @@
         "cells": [
           {
             "position": {
-              "x": 220,
-              "y": 89.99999999999994
+              "x": 170,
+              "y": 240
             },
             "size": {
               "width": 570,
@@ -57,13 +57,8 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [
-                "46c67dd0-0103-44bd-8385-8f98115ce50c"
-              ],
-              "containedElements": [
-                "47cb8464-55e2-4e2b-8e6f-64b361b766e9",
-                "deba70a7-eccc-4d84-aac0-3c5cd180c8d3"
-              ]
+              "crossingFlows": [],
+              "containedElements": []
             }
           },
           {
@@ -185,7 +180,7 @@
           },
           {
             "position": {
-              "x": 570,
+              "x": 740,
               "y": 170
             },
             "size": {
@@ -194,8 +189,8 @@
             },
             "attrs": {
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -292,9 +287,27 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "a4ecee94-f45e-41aa-a890-31a6e530d1b9",
+                  "title": "Kann kaputt gehen",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -306,7 +319,7 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": ""
+                  "name": "block"
                 },
                 "strokeDasharray": null
               }
@@ -323,14 +336,12 @@
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
+              "isBidirectional": true,
+              "isEncrypted": true,
               "isPublicNetwork": false,
-              "protocol": "",
+              "protocol": "https",
               "threats": [],
-              "trustBoundaryIds": [
-                "5aa39ed2-0f4a-4d2c-9a51-0bf0f4e16ad5"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Data Flow"
@@ -341,8 +352,145 @@
               "y": 188
             },
             "target": {
-              "cell": "deba70a7-eccc-4d84-aac0-3c5cd180c8d3",
-              "port": "db356ecd-8a7b-4ebf-a411-1e8d3d4bb726"
+              "cell": "d60174f1-3ce4-49b4-880d-78bdbea3bcf6",
+              "port": "4764489e-aa92-4e97-9ef7-325dd19e16b0"
+            },
+            "vertices": [
+              {
+                "x": 410,
+                "y": 160
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
+          },
+          {
+            "position": {
+              "x": 523,
+              "y": 110
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "7ddfe7bd-58cf-4893-ac31-cbd2e22a762d"
+                },
+                {
+                  "group": "right",
+                  "id": "a8a3a773-6837-4072-b396-be02dbee5f73"
+                },
+                {
+                  "group": "bottom",
+                  "id": "6a39d601-e0b2-404f-b071-094709aeb3bc"
+                },
+                {
+                  "group": "left",
+                  "id": "4764489e-aa92-4e97-9ef7-325dd19e16b0"
+                }
+              ]
+            },
+            "id": "d60174f1-3ce4-49b4-880d-78bdbea3bcf6",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Store",
+              "name": "Store",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
             }
           }
         ],
@@ -351,6 +499,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
