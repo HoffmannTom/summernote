@@ -1,7 +1,7 @@
 {
   "version": "2.6.2",
   "release_version": "",
-  "released_at": "",
+  "released_at": "2026-09-16",
   "summary": {
     "title": "New Threat Model",
     "owner": "",
@@ -10,8 +10,27 @@
   },
   "detail": {
     "contributors": [],
-    "diagrams": [],
-    "diagramTop": 0,
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Neues CIA Diagramm",
+        "diagramType": "CIA",
+        "placeholder": "Neue CIA Diagramm Beschreibung",
+        "thumbnail": "./public/content/images/thumbnail.cia.jpg",
+        "version": "2.6.2",
+        "cells": []
+      },
+      {
+        "id": 1,
+        "title": "Neues STRIDE Diagramm",
+        "diagramType": "STRIDE",
+        "placeholder": "Neue STRIDE Diagramm Beschreibung",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": []
+      }
+    ],
+    "diagramTop": 2,
     "reviewer": "",
     "threatTop": 0
   }
