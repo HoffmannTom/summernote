@@ -18,7 +18,8 @@
         "placeholder": "Neue CIA Diagramm Beschreibung",
         "thumbnail": "./public/content/images/thumbnail.cia.jpg",
         "version": "2.6.2",
-        "cells": []
+        "cells": [],
+        "description": "Test"
       },
       {
         "id": 1,
@@ -27,7 +28,8 @@
         "placeholder": "Neue STRIDE Diagramm Beschreibung",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.6.2",
-        "cells": []
+        "cells": [],
+        "description": "Test2"
       }
     ],
     "diagramTop": 2,
