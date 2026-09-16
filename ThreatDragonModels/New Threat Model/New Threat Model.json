@@ -9,7 +9,11 @@
     "id": 0
   },
   "detail": {
-    "contributors": [],
+    "contributors": [
+      {
+        "name": "hoffmann"
+      }
+    ],
     "diagrams": [
       {
         "id": 0,
